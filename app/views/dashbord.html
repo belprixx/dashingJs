@@ -1,0 +1,8 @@
+<div gridster>
+    <ul>
+        <li gridster-item="item" ng-repeat="item in items" style="background: {{item.background}}">
+            <i ng-if="item.icon" class="fa fa-{{item.icon}}"></i>
+            <div ng-if="!!item.widget" ng-include="'widgets/'+item.widget+'/widget.html'"></div>
+        </li>
+    </ul>
+</div>

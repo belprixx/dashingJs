@@ -1,0 +1,46 @@
+body {
+  background-color: #222;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  div[gridster]{
+    > ul {
+      > li {
+        position: relative;
+        text-align: center;
+        > i[class^=fa] {
+          opacity: .10;
+          color: #ffffff;
+          font-size: 260px;
+          line-height: 100%;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  h1{
+    text-transform: uppercase;
+    font-size:70px;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  h3{
+    color: #e5e5e5;
+    text-transform: uppercase;
+    font-size:30px;
+  }
+  .updatedAt{
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    color: #eeeeee;
+    width: 100%;
+    text-align: center;
+  }
+}
+
